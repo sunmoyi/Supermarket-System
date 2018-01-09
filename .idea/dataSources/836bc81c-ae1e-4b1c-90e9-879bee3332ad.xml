@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="finaltest@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="finaltest">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="debug"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="JSP"/>
+    <schema id="6" parent="1" name="mysql"/>
+    <schema id="7" parent="1" name="performance_schema"/>
+    <schema id="8" parent="1" name="phone"/>
+    <schema id="9" parent="1" name="studentinfo"/>
+    <schema id="10" parent="1" name="sys"/>
+    <table id="11" parent="2" name="Account"/>
+    <table id="12" parent="2" name="Customer"/>
+    <table id="13" parent="2" name="Employee"/>
+    <table id="14" parent="2" name="Evidence"/>
+    <table id="15" parent="2" name="Goods"/>
+    <table id="16" parent="2" name="Jurisdiction"/>
+    <table id="17" parent="2" name="News"/>
+    <table id="18" parent="2" name="Provider"/>
+    <column id="19" parent="11" name="employeeId">
+      <Position>1</Position>
+      <DataType>char(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="20" parent="11" name="password">
+      <Position>2</Position>
+      <DataType>char(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="21" parent="11" name="lastLogin">
+      <Position>3</Position>
+      <DataType>char(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="22" parent="12" name="customerId">
+      <Position>1</Position>
+      <DataType>char(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="23" parent="12" name="customerName">
+      <Position>2</Position>
+      <DataType>char(30)|0</DataType>
+    </column>
+    <column id="24" parent="12" name="customerSex">
+      <Position>3</Position>
+      <DataType>char(30)|0</DataType>
+    </column>
+    <column id="25" parent="12" name="customerPhone">
+      <Position>4</Position>
+      <DataType>char(30)|0</DataType>
+    </column>
+    <key id="26" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>customerId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="27" parent="13" name="employeeId">
+      <Position>1</Position>
+      <DataType>char(30)|0</DataType>
+    </column>
+    <column id="28" parent="13" name="employeeSex">
+      <Position>2</Position>
+      <DataType>char(30)|0</DataType>
+    </column>
+    <column id="29" parent="13" name="employeePosition">
+      <Position>3</Position>
+      <DataType>char(30)|0</DataType>
+    </column>
+    <column id="30" parent="13" name="employeePhone">
+      <Position>4</Position>
+      <DataType>char(30)|0</DataType>
+    </column>
+    <column id="31" parent="13" name="employeeName">
+      <Position>5</Position>
+      <DataType>char(30)|0</DataType>
+    </column>
+    <column id="32" parent="14" name="customerId">
+      <Position>1</Position>
+      <DataType>char(30)|0</DataType>
+    </column>
+    <column id="33" parent="14" name="evidenceTime">
+      <Position>2</Position>
+      <DataType>char(30)|0</DataType>
+    </column>
+    <column id="34" parent="14" name="goodsIds">
+      <Position>3</Position>
+      <DataType>char(30)|0</DataType>
+    </column>
+    <column id="35" parent="14" name="goodsNums">
+      <Position>4</Position>
+      <DataType>char(30)|0</DataType>
+    </column>
+    <column id="36" parent="14" name="evidencePrice">
+      <Position>5</Position>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="37" parent="15" name="goodsName">
+      <Position>1</Position>
+      <DataType>char(30)|0</DataType>
+    </column>
+    <column id="38" parent="15" name="goodsNumber">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="39" parent="15" name="goodsPrice">
+      <Position>3</Position>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="40" parent="15" name="goodsId">
+      <Position>4</Position>
+      <DataType>char(30)|0</DataType>
+    </column>
+    <column id="41" parent="15" name="providerId">
+      <Position>5</Position>
+      <DataType>char(30)|0</DataType>
+    </column>
+    <column id="42" parent="16" name="employeeId">
+      <Position>1</Position>
+      <DataType>char(30)|0</DataType>
+    </column>
+    <column id="43" parent="16" name="showGoods">
+      <Position>2</Position>
+      <DataType>tinyint(1)|0</DataType>
+    </column>
+    <column id="44" parent="16" name="updateGoodsNum">
+      <Position>3</Position>
+      <DataType>tinyint(1)|0</DataType>
+    </column>
+    <column id="45" parent="16" name="admin">
+      <Position>4</Position>
+      <DataType>tinyint(1)|0</DataType>
+    </column>
+    <column id="46" parent="16" name="updataGoods">
+      <Position>5</Position>
+      <DataType>tinyint(1)|0</DataType>
+    </column>
+    <column id="47" parent="16" name="postNews">
+      <Position>6</Position>
+      <DataType>tinyint(1)|0</DataType>
+    </column>
+    <column id="48" parent="16" name="charge">
+      <Position>7</Position>
+      <DataType>tinyint(1)|0</DataType>
+    </column>
+    <column id="49" parent="16" name="changePrice">
+      <Position>8</Position>
+      <DataType>tinyint(1)|0</DataType>
+    </column>
+    <column id="50" parent="17" name="newsId">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="51" parent="17" name="newsBody">
+      <Position>2</Position>
+      <DataType>char(200)|0</DataType>
+    </column>
+    <column id="52" parent="17" name="newsTitle">
+      <Position>3</Position>
+      <DataType>char(30)|0</DataType>
+    </column>
+    <column id="53" parent="18" name="providerPhone">
+      <Position>1</Position>
+      <DataType>char(30)|0</DataType>
+    </column>
+    <column id="54" parent="18" name="providerLocation">
+      <Position>2</Position>
+      <DataType>char(30)|0</DataType>
+    </column>
+    <column id="55" parent="18" name="providerName">
+      <Position>3</Position>
+      <DataType>char(30)|0</DataType>
+    </column>
+    <column id="56" parent="18" name="providerId">
+      <Position>4</Position>
+      <DataType>char(30)|0</DataType>
+    </column>
+  </database-model>
+</dataSource>

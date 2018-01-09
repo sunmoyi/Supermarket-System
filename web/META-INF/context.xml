@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context reloadable = "true">
+<Resource
+      name="jdbc/sampleDS"
+      type="javax.sql.DataSource"
+      maxTotal="100"
+      maxIdle="50"
+      username="root"
+      maxWaitMillis="5000"
+      driverClassName="com.mysql.jdbc.Driver"
+      password="moyi4056386"
+      url="jdbc:mysql://localhost:3306/finaltest"/>
+</Context>
